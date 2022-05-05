@@ -15,7 +15,7 @@
 
 header {
   background-color: black;
-  width: 1400px;
+  width: 100%;
 }
 
 .logo {
@@ -329,4 +329,35 @@ nav ul li:hover .sub-opcoes ul li:hover {
   background: rgb(246, 69, 69);
   margin-top: 8px;
   padding: 10px;
+}
+
+.icon_footer button {
+  padding: 10px 8px;
+  height: 35px;
+  width: 130px;
+  background-color: rgb(11, 9, 9);
+  color: rgb(249, 249, 249);
+
+  border: 1px solid #555;
+  border-radius: 20px;
+  border: solid 1px;
+  margin-left: 190px;
+  margin-top: 12px;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.icon_footer button:hover {
+  background: rgb(245, 68, 68);
+}
+
+.Redes__sociais img {
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.Redes__sociais img:hover {
+  background: rgb(68, 95, 245);
 }
