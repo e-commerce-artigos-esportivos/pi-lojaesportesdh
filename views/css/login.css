@@ -50,6 +50,27 @@ header {
   align-items: center;
 }
 
+.Buscar input {
+  float: left;
+  background-color: transparent;
+  border-radius: 0 7px 7px 0;
+  font-size: 15px;
+  padding-left: 8px;
+  border-color: transparent;
+  width: 200px;
+  font-weight: bold;
+  height: 32px;
+}
+
+.Buscar img {
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 30px;
+  width: 35px;
+}
+
 /*
 .login {
   padding: 10px 8px;
@@ -96,9 +117,18 @@ header {
   justify-content: center;
   align-items: center;
 }
-
+.BOTAO_CARRINHO a {
+  display: inline;
+  text-align: left;
+}
 .BOTAO_CARRINHO img {
   filter: brightness(0.1);
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 30px;
+  width: 30px;
 }
 
 button {
@@ -138,8 +168,19 @@ button {
   align-items: center;
 }
 
+.BOTAO_CONTA a {
+  display: flex;
+  text-align: left;
+}
+
 .BOTAO_CONTA img {
   filter: brightness(0.1);
+  padding-left: 10px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 30px;
+  width: 35px;
 }
 
 /*BARRAS DE OPÇÕES*/
@@ -149,6 +190,7 @@ nav {
   text-align: center;
   line-height: 20px;
   white-space: nowrap;
+  text-shadow: rgb(179, 178, 178) 0.1em 0.1em 0.2em;
 }
 
 nav ul {
@@ -165,9 +207,11 @@ nav ul li {
   background-color: white;
   border-radius: 30px 60px 30px 60px;
   transition: 0.5s;
+  display: inline-block;
 }
 nav ul li:hover {
   background: linear-gradient(to right, rgb(238, 242, 240), rgb(249, 86, 27));
+  box-shadow: 0 0 1em rgb(246, 246, 248);
 }
 
 nav ul li a {
@@ -211,7 +255,7 @@ nav ul li:hover .sub-times-br ul li:hover {
 }
 
 nav ul li:hover .sub-times-Europa {
-  display: flex;
+  display: block;
   position: absolute;
   background-color: rgb(91, 245, 85);
   margin-top: 15px;
@@ -219,7 +263,7 @@ nav ul li:hover .sub-times-Europa {
 }
 
 nav ul li:hover .sub-times-Europa ul {
-  display: flex;
+  display: block;
 }
 
 nav ul li:hover .sub-times-Europa ul li {
@@ -291,73 +335,123 @@ nav ul li:hover .sub-opcoes ul li:hover {
   background-color: red;
 }
 
-/* INICIO PRODUTOS*/
-.buttons__comprar button {
-  color: rgb(246, 244, 244);
-  background: rgb(246, 69, 69);
-  margin-top: 5px;
+/*INICIO DO MAIN*/
+
+main {
+  background: linear-gradient(to right, rgb(238, 242, 240), rgb(249, 86, 27));
+  display: flex;
+  justify-content: space-around;
+  padding: 80px;
+}
+/*main box à esquerda*/
+.box_left {
+  border-radius: 10px;
+  background-color: rgb(60, 47, 242);
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  height: 330px;
+  width: 420px;
+  border-radius: 5px 30px 5px 30px;
+  margin: 10px;
+  padding: 5px;
 }
 
-.CAIXAS_LINKS {
-  margin-left: 10px;
+.box_textlogin {
+  display: grid;
+  font: 23px Arial, sans-serif;
+  border-radius: 6px;
+}
+
+.box_textlogin input {
+  font: 19px Arial, sans-serif;
+  text-align: start;
+  padding: 10px;
+  border-radius: 6px;
+  height: 40px;
+  width: 340px;
+}
+
+.box_textsenha {
+  display: grid;
+  font: 23px Arial, sans-serif;
+  border-radius: 6px;
+}
+
+.input_senha {
+  font: 19px Arial, sans-serif;
+  text-align: start;
+  padding: 10px;
+  border-radius: 6px;
+  height: 40px;
+  width: 340px;
+}
+
+.input_entrar {
+  font: 23px Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
   margin: 20px;
+  background-color: rgb(21, 155, 3);
+  color: black;
+  padding: 2px;
+}
+
+.input_cod_acesso {
+  font: 23px Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.input_esqueciSenha {
+  margin: 5px;
+  font: 16px Arial, sans-serif;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 1px;
+  padding: 8px;
+}
+
+/*main box à direita*/
+
+.box_right {
+  border: transparent;
+}
+
+.p-1 {
+  border: transparent;
+  background-color: rgb(251, 13, 13);
+  color: white;
+  margin: 7px;
+  text-align: center;
+  margin-left: 70px;
+  border-radius: 30px 5px 30px 6px;
+  font: 23px Arial, sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  box-shadow: 10px 5px 5px rgb(214, 214, 214);
+}
+
+.p-2 {
+  border: transparent 2px;
+  margin: 10px;
+  text-shadow: rgb(179, 176, 176) 0.1em 0.1em 0.2em;
+  box-shadow: 10px 5px 5px rgb(12, 12, 9);
+  background-color: rgb(233, 242, 64);
+  color: black;
+  border-radius: 30px 5px 30px 6px;
+  font: 23px Arial, sans-serif;
+  font-weight: bold;
   padding: 20px;
 }
 
-/*FOOTER INICIO*/
-.centralizado {
-  border: none;
-  margin-left: 300px;
-  margin-top: 50px;
-}
-
-.centralizado input {
-  color: rgb(246, 244, 244);
-  height: 40px;
-  width: 300px;
-  margin-top: 5px;
-}
-
-.footer__boxMSG,
-.seu-email {
-  background-image: linear-gradient(to right, blue, yellow);
-  color: white;
-}
-
-.receber_button button {
-  color: rgb(246, 244, 244);
-  background: rgb(246, 69, 69);
-  margin-top: 8px;
-  padding: 10px;
-}
-
-.icon_footer button {
-  padding: 10px 8px;
-  height: 35px;
-  width: 130px;
-  background-color: rgb(11, 9, 9);
-  color: rgb(249, 249, 249);
-
-  border: 1px solid #555;
-  border-radius: 20px;
-  border: solid 1px;
-  margin-left: 190px;
-  margin-top: 12px;
-  text-align: center;
-  user-select: none;
-  cursor: pointer;
-  transition: background 0.5s;
-}
-
-.icon_footer button:hover {
-  background: rgb(245, 68, 68);
-}
-
-.Redes__sociais img {
-  cursor: pointer;
-  transition: background 0.5s;
-}
-
-.Redes__sociais img:hover {
-  background: rgb(68, 95, 245);
+.box_right input {
+  font: 23px Arial, sans-serif;
+  border-radius: 30px 5px 30px 6px;
+  margin-right: 40px;
+  font-weight: bold;
+  padding: 8px;
+  text-shadow: rgb(158, 156, 156) 0.1em 0.1em 0.2em;
+  box-shadow: 10px 5px 5px black;
 }
