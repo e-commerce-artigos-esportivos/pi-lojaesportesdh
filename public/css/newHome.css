@@ -1,0 +1,231 @@
+/*fonte do site*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  background-color: black;
+}
+
+/* Slider------------------------------------------------------------------- */
+#items-wrapper {
+  width: 50vw;
+}
+
+#items {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.item {
+  flex: none;
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  pointer-events: none;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar { 
+  background: transparent;
+}
+/* Slider End------------------------------------------------------------------- */
+
+/* Bloco de destaques e promos Start----------------------------------------------- */
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px 0;
+}
+
+  .container-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 336px;
+    /* background-image: url('../../public/img/campo.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
+  }
+
+  .destaque {
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(221,221,221,0.5);
+    transition: transform .5s ease;
+  }
+
+  .destaque:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
+
+  .destaque p {
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .destaque a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .valor-antigo {
+    color: red;
+    text-decoration: line-through;
+  }
+ 
+
+/* Bloco de destaques e promos End----------------------------------------------- */
+
+/* Box buttons-------------------------- */
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* background-image: url('../../public/img/campo.jpg');
+  background-repeat: no-repeat;
+  background-position: center; */
+  margin-top: 40px;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+}
+
+.btn-wrapper p {
+  text-transform: uppercase;
+  text-size: 10px;
+  color: black;
+}
+
+.btn-body {
+  width: 236px;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: rgba(221,221,221,0.5);
+  transition: transform .5s ease;
+}
+
+.btn-body:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Deixe seu e-mail--------------------------------------------------- */
+.email-wrapper {
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+.email-title {
+  color: white;
+  text-align: center;
+}
+
+.email-sendTo {
+  display: flex;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+.box-input-nome {
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.box-input-nome input {
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Font Awesome';
+}
+
+.box-input-nome i {
+  color: grey;
+  position: relative;
+  top: 2px;
+  right: 20px;
+}
+
+.box-input-email {
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.box-input-email input {
+  height: 30px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Font Awesome';
+}
+
+.box-input-email i {
+  color: grey;
+  position: relative;
+  top: 2px;
+  right: 20px;
+}
+
+.box-input-submit button {
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: blue;
+  border-radius: 30px
+}
+
+.box-input-nome input:focus, .box-input-email input:focus {
+  background-color: #ffd5bf;
+}
+
+/* Video promocional----------------------------------------------- */
+.container-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container-video video {
+  width: 500px;
+}
+/* Video promocional End----------------------------------------------- */
+
+footer h2 {
+    color: white;
+    text-align: center;
+}
